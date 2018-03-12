@@ -7,13 +7,14 @@
 
 ### Classes
 
-* [ProofOfWork](classes/proofofwork.md)
+* [ProofOfWorkBox](classes/proofofworkbox.md)
 
 
 ### Interfaces
 
 * [IAttachToTangleRequest](interfaces/iattachtotanglerequest.md)
 * [IAttachToTangleResponse](interfaces/iattachtotangleresponse.md)
+* [IJobResponse](interfaces/ijobresponse.md)
 
 
 

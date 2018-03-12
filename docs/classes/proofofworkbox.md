@@ -1,8 +1,8 @@
-[@iota-pico/pow-box](../README.md) > [ProofOfWork](../classes/proofofwork.md)
+[@iota-pico/pow-box](../README.md) > [ProofOfWorkBox](../classes/proofofworkbox.md)
 
 
 
-# Class: ProofOfWork
+# Class: ProofOfWorkBox
 
 
 ProofOfWork implementation using Remote PowBox.
@@ -15,14 +15,14 @@ ProofOfWork implementation using Remote PowBox.
 
 ### Constructors
 
-* [constructor](proofofwork.md#constructor)
+* [constructor](proofofworkbox.md#constructor)
 
 
 ### Methods
 
-* [initialize](proofofwork.md#initialize)
-* [performsSingle](proofofwork.md#performssingle)
-* [pow](proofofwork.md#pow)
+* [initialize](proofofworkbox.md#initialize)
+* [performsSingle](proofofworkbox.md#performssingle)
+* [pow](proofofworkbox.md#pow)
 
 
 
@@ -31,10 +31,10 @@ ProofOfWork implementation using Remote PowBox.
 <a id="constructor"></a>
 
 
-### ⊕ **new ProofOfWork**(networkClient: *`INetworkClient`*, apiKey: *`string`*): [ProofOfWork](proofofwork.md)
+### ⊕ **new ProofOfWorkBox**(networkClient: *`INetworkClient`*, apiKey: *`string`*, pollIntervalMs?: *`number`*): [ProofOfWorkBox](proofofworkbox.md)
 
 
-*Defined in proofOfWork.ts:18*
+*Defined in proofOfWorkBox.ts:23*
 
 
 
@@ -43,16 +43,17 @@ Create an instance of ProofOfWork.
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| networkClient | `INetworkClient`   |  The network client to communicate through. |
-| apiKey | `string`   |  The API key to access the pow box. |
+| Param | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| networkClient | `INetworkClient`  | - |   The network client to communicate through. |
+| apiKey | `string`  | - |   The API key to access the pow box. |
+| pollIntervalMs | `number`  | 1000 |   - |
 
 
 
 
 
-**Returns:** [ProofOfWork](proofofwork.md)
+**Returns:** [ProofOfWorkBox](proofofworkbox.md)
 
 ---
 
@@ -66,7 +67,7 @@ Create an instance of ProofOfWork.
 
 
 
-*Defined in proofOfWork.ts:40*
+*Defined in proofOfWorkBox.ts:49*
 
 
 
@@ -91,7 +92,7 @@ ___
 
 
 
-*Defined in proofOfWork.ts:48*
+*Defined in proofOfWorkBox.ts:57*
 
 
 
@@ -118,7 +119,7 @@ ___
 
 
 
-*Defined in proofOfWork.ts:60*
+*Defined in proofOfWorkBox.ts:69*
 
 
 

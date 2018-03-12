@@ -106,6 +106,7 @@ export class ProofOfWorkBox implements IProofOfWork {
                 try {
                     const jobResponse = await this._networkClient.getJson<IJobResponse>(`jobs/${jobId}`);
                     if (jobResponse.error) {
+                        clearInterval(intervalId);
                         reject(new CryptoError(jobResponse.errorMessage));
                     } else if (jobResponse.progress === "100") {
                         clearInterval(intervalId);

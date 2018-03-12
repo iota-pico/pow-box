@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/proofOfWorkBox.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">src</a> proofOfWorkBox.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>49/49</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>33/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>9/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>48/48</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ArrayHelper } from "@iota-pico/core/dist/helpers/arrayHelper";
+import { NumberHelper } from "@iota-pico/core/dist/helpers/numberHelper";
+import { ObjectHelper } from "@iota-pico/core/dist/helpers/objectHelper";
+import { StringHelper } from "@iota-pico/core/dist/helpers/stringHelper";
+import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
+import { CryptoError } from "@iota-pico/crypto/dist/error/cryptoError";
+import { IProofOfWork } from "@iota-pico/crypto/dist/interfaces/IProofOfWork";
+import { Hash } from "@iota-pico/data/dist/data/hash";
+import { Trytes } from "@iota-pico/data/dist/data/trytes";
+import { IAttachToTangleRequest } from "./models/IAttachToTangleRequest";
+import { IAttachToTangleResponse } from "./models/IAttachToTangleResponse";
+import { IJobResponse } from "./models/IJobResponse";
+&nbsp;
+/**
+ * ProofOfWork implementation using Remote PowBox.
+ */
+export class ProofOfWorkBox implements IProofOfWork {
+    /* @internal */
+    private readonly _networkClient: INetworkClient;
+    /* @internal */
+    private readonly _apiKey: string;
+    /* @internal */
+    private readonly _pollIntervalMs: number;
+&nbsp;
+    /**
+     * Create an instance of ProofOfWork.
+     * @param networkClient The network client to communicate through.
+     * @param apiKey The API key to access the pow box.
+     */
+    constructor(networkClient: INetworkClient, apiKey: string, pollIntervalMs: number = 1000) {
+        if (ObjectHelper.isEmpty(networkClient)) {
+            throw new CryptoError("The networkClient must be defined");
+        }
+        if (StringHelper.isEmpty(apiKey)) {
+            throw new CryptoError("The apiKey must not be empty");
+        }
+        if (!NumberHelper.isInteger(pollIntervalMs) || pollIntervalMs &lt;= 0) {
+            throw new CryptoError("The pollIntervalMs must be &gt; 0");
+        }
+        this._networkClient = networkClient;
+        this._apiKey = apiKey;
+        this._pollIntervalMs = pollIntervalMs;
+    }
+&nbsp;
+    /**
+     * Allow the proof of work to perform any initialization.
+     * Will throw an exception if the implementation is not supported.
+     */
+    public async initialize(): Promise&lt;void&gt; {
+        return Promise.resolve();
+    }
+&nbsp;
+    /**
+     * Performs single conversion per pow call.
+     * @returns True if pow only does one conversion.
+     */
+    public performsSingle(): boolean {
+        return false;
+    }
+&nbsp;
+    /**
+     * Perform a proof of work on the data.
+     * @param trunkTransaction The trunkTransaction to use for the pow.
+     * @param branchTransaction The branchTransaction to use for the pow.
+     * @param trytes The trytes to perform the pow on.
+     * @param minWeightMagnitude The minimum weight magnitude.
+     * @returns The trytes produced by the proof of work.
+     */
+    public async pow(trunkTransaction: Hash, branchTransaction: Hash, trytes: Trytes[], minWeightMagnitude: number): Promise&lt;Trytes[]&gt; {
+        if (!ObjectHelper.isType(trunkTransaction, Hash)) {
+            throw new CryptoError("The trunkTransaction must be an object of type Hash");
+        }
+        if (!ObjectHelper.isType(branchTransaction, Hash)) {
+            throw new CryptoError("The branchTransaction must be an object of type Hash");
+        }
+        if (!ArrayHelper.isTyped(trytes, Trytes)) {
+            throw new CryptoError("The trytes must be an array of type Trytes");
+        }
+        if (!NumberHelper.isInteger(minWeightMagnitude) || minWeightMagnitude &lt;= 0) {
+            throw new CryptoError("The minWeightMagnitude must be &gt; 0");
+        }
+&nbsp;
+        const attachToTangleRequest: IAttachToTangleRequest = {
+            command: "attachToTangle",
+            trunkTransaction: trunkTransaction.toTrytes().toString(),
+            branchTransaction: branchTransaction.toTrytes().toString(),
+            minWeightMagnitude,
+            trytes: trytes.map(t =&gt; t.toString())
+        };
+&nbsp;
+        const additionalHeaders = { Authorization: this._apiKey };
+&nbsp;
+        const attachToTangleResponse = await this._networkClient.postJson&lt;IAttachToTangleRequest, IAttachToTangleResponse&gt;(attachToTangleRequest, "commands", additionalHeaders);
+&nbsp;
+        if (ObjectHelper.isEmpty(attachToTangleResponse) || StringHelper.isEmpty(attachToTangleResponse.jobId)) {
+            throw new CryptoError("The attachToTangleRequest did not return a jobId");
+        } else {
+            return this.waitForJobCompletion(attachToTangleResponse.jobId, trytes);
+        }
+    }
+&nbsp;
+    /* @internal */
+    private async waitForJobCompletion(jobId: string, sourceTrytes: Trytes[]): Promise&lt;Trytes[]&gt; {
+        return new Promise&lt;Trytes[]&gt;((resolve, reject) =&gt; {
+            const intervalId = setInterval(async () =&gt; {
+                try {
+                    const jobResponse = await this._networkClient.getJson&lt;IJobResponse&gt;(`jobs/${jobId}`);
+                    if (jobResponse.error) {
+                        clearInterval(intervalId);
+                        reject(new CryptoError(jobResponse.errorMessage));
+                    } else if (jobResponse.progress === "100") {
+                        clearInterval(intervalId);
+                        if (jobResponse &amp;&amp; jobResponse.response &amp;&amp; jobResponse.response.trytes &amp;&amp; jobResponse.response.trytes.length === sourceTrytes.length) {
+                            resolve(jobResponse.response.trytes.map(t =&gt; Trytes.fromString(t)));
+                        } else {
+                            reject(new CryptoError("The response did not contain enough trytes"));
+                        }
+                    }
+                } catch (err) {
+                    clearInterval(intervalId);
+                    reject(err);
+                }
+            },
+                                           this._pollIntervalMs);
+        });
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 12 2018 14:31:17 GMT+0300 (Turkey Standard Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>

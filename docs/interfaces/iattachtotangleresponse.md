@@ -11,17 +11,17 @@ Represents the response for pow box attach to tangle command.
 
 
 ## Properties
-<a id="trytes"></a>
+<a id="jobid"></a>
 
-###  trytes
+###  jobId
 
-**●  trytes**:  *`string`[]* 
+**●  jobId**:  *`string`* 
 
 *Defined in models/IAttachToTangleResponse.ts:9*
 
 
 
-The trytes that have has pow performed on them.
+The id of the job we can use to get progress.
 
 
 
