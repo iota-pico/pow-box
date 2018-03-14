@@ -16,7 +16,7 @@ install:
   - cd iotaeco/iota-pico-crypto
   - npm link @iota-pico/core @iota-pico/data
   - npm link
-  - cd ../iota-pico-pow-js
+  - cd ../iota-pico-pow-box
   - npm link @iota-pico/core @iota-pico/data @iota-pico/crypto
   - npm install
 script:
