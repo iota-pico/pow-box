@@ -34,7 +34,7 @@ ProofOfWork implementation using Remote PowBox.
 ### ⊕ **new ProofOfWorkBox**(networkClient: *`INetworkClient`*, apiKey: *`string`*, pollIntervalMs?: *`number`*): [ProofOfWorkBox](proofofworkbox.md)
 
 
-*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/c6707db/src/proofOfWorkBox.ts#L23)*
+*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L23)*
 
 
 
@@ -67,7 +67,7 @@ Create an instance of ProofOfWork.
 
 
 
-*Defined in [proofOfWorkBox.ts:49](https://github.com/iotaeco/iota-pico-pow-box/blob/c6707db/src/proofOfWorkBox.ts#L49)*
+*Defined in [proofOfWorkBox.ts:49](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L49)*
 
 
 
@@ -92,7 +92,7 @@ ___
 
 
 
-*Defined in [proofOfWorkBox.ts:57](https://github.com/iotaeco/iota-pico-pow-box/blob/c6707db/src/proofOfWorkBox.ts#L57)*
+*Defined in [proofOfWorkBox.ts:57](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L57)*
 
 
 
@@ -119,7 +119,7 @@ ___
 
 
 
-*Defined in [proofOfWorkBox.ts:69](https://github.com/iotaeco/iota-pico-pow-box/blob/c6707db/src/proofOfWorkBox.ts#L69)*
+*Defined in [proofOfWorkBox.ts:69](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L69)*
 
 
 

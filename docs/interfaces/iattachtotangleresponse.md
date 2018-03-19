@@ -17,7 +17,7 @@ Represents the response for pow box attach to tangle command.
 
 **●  jobId**:  *`string`* 
 
-*Defined in [models/IAttachToTangleResponse.ts:9](https://github.com/iotaeco/iota-pico-pow-box/blob/c6707db/src/models/IAttachToTangleResponse.ts#L9)*
+*Defined in [models/IAttachToTangleResponse.ts:9](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/models/IAttachToTangleResponse.ts#L9)*
 
 
 
