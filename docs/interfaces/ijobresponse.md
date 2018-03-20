@@ -17,7 +17,7 @@ Represents the response for pow box job command.
 
 **●  createdAt**:  *`string`* 
 
-*Defined in [models/IJobResponse.ts:19](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L19)*
+*Defined in [models/IJobResponse.ts:19](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L19)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  error**:  *`boolean`* 
 
-*Defined in [models/IJobResponse.ts:24](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L24)*
+*Defined in [models/IJobResponse.ts:24](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L24)*
 
 
 
@@ -51,7 +51,7 @@ ___
 
 **●  errorMessage**:  *`string`* 
 
-*Defined in [models/IJobResponse.ts:29](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L29)*
+*Defined in [models/IJobResponse.ts:29](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L29)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 **●  jobId**:  *`string`* 
 
-*Defined in [models/IJobResponse.ts:9](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L9)*
+*Defined in [models/IJobResponse.ts:9](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L9)*
 
 
 
@@ -85,7 +85,7 @@ ___
 
 **●  progress**:  *`string`* 
 
-*Defined in [models/IJobResponse.ts:34](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L34)*
+*Defined in [models/IJobResponse.ts:34](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L34)*
 
 
 
@@ -102,7 +102,7 @@ ___
 
 **●  response**:  *`object`* 
 
-*Defined in [models/IJobResponse.ts:39](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L39)*
+*Defined in [models/IJobResponse.ts:39](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L39)*
 
 
 
@@ -129,7 +129,7 @@ ___
 
 **●  updatedAt**:  *`string`* 
 
-*Defined in [models/IJobResponse.ts:14](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/models/IJobResponse.ts#L14)*
+*Defined in [models/IJobResponse.ts:14](https://github.com/iotaeco/iota-pico-pow-box/blob/5d05235/src/models/IJobResponse.ts#L14)*
 
 
 
