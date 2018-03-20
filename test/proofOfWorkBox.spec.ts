@@ -38,14 +38,6 @@ describe("ProofOfWorkBox", () => {
         });
     });
 
-    describe("performsSingle", () => {
-        it("can be called", () => {
-            const networkClientStub = <INetworkClient>{};
-            const obj = new ProofOfWorkBox(networkClientStub, "AAA");
-            chai.expect(obj.performsSingle()).to.be.equal(false);
-        });
-    });
-
     describe("pow", () => {
         it("can fail with no trunkTransaction", async () => {
             const networkClientStub = <INetworkClient>{};

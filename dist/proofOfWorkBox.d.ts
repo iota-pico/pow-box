@@ -10,6 +10,7 @@ export declare class ProofOfWorkBox implements IProofOfWork {
      * Create an instance of ProofOfWork.
      * @param networkClient The network client to communicate through.
      * @param apiKey The API key to access the pow box.
+     * @param pollIntervalMs The polling time to check for completion.
      */
     constructor(networkClient: INetworkClient, apiKey: string, pollIntervalMs?: number);
     /**
@@ -17,11 +18,6 @@ export declare class ProofOfWorkBox implements IProofOfWork {
      * Will throw an exception if the implementation is not supported.
      */
     initialize(): Promise<void>;
-    /**
-     * Performs single conversion per pow call.
-     * @returns True if pow only does one conversion.
-     */
-    performsSingle(): boolean;
     /**
      * Perform a proof of work on the data.
      * @param trunkTransaction The trunkTransaction to use for the pow.

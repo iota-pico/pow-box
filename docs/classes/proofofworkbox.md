@@ -21,7 +21,6 @@ ProofOfWork implementation using Remote PowBox.
 ### Methods
 
 * [initialize](proofofworkbox.md#initialize)
-* [performsSingle](proofofworkbox.md#performssingle)
 * [pow](proofofworkbox.md#pow)
 
 
@@ -34,7 +33,7 @@ ProofOfWork implementation using Remote PowBox.
 ### ⊕ **new ProofOfWorkBox**(networkClient: *`INetworkClient`*, apiKey: *`string`*, pollIntervalMs?: *`number`*): [ProofOfWorkBox](proofofworkbox.md)
 
 
-*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L23)*
+*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/proofOfWorkBox.ts#L23)*
 
 
 
@@ -47,7 +46,7 @@ Create an instance of ProofOfWork.
 | ------ | ------ | ------ | ------ |
 | networkClient | `INetworkClient`  | - |   The network client to communicate through. |
 | apiKey | `string`  | - |   The API key to access the pow box. |
-| pollIntervalMs | `number`  | 1000 |   - |
+| pollIntervalMs | `number`  | 1000 |   The polling time to check for completion. |
 
 
 
@@ -67,7 +66,7 @@ Create an instance of ProofOfWork.
 
 
 
-*Defined in [proofOfWorkBox.ts:49](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L49)*
+*Defined in [proofOfWorkBox.ts:50](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/proofOfWorkBox.ts#L50)*
 
 
 
@@ -84,33 +83,6 @@ Allow the proof of work to perform any initialization. Will throw an exception i
 
 ___
 
-<a id="performssingle"></a>
-
-###  performsSingle
-
-► **performsSingle**(): `boolean`
-
-
-
-*Defined in [proofOfWorkBox.ts:57](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L57)*
-
-
-
-Performs single conversion per pow call.
-
-
-
-
-**Returns:** `boolean`
-True if pow only does one conversion.
-
-
-
-
-
-
-___
-
 <a id="pow"></a>
 
 ###  pow
@@ -119,7 +91,7 @@ ___
 
 
 
-*Defined in [proofOfWorkBox.ts:69](https://github.com/iotaeco/iota-pico-pow-box/blob/246a424/src/proofOfWorkBox.ts#L69)*
+*Defined in [proofOfWorkBox.ts:62](https://github.com/iotaeco/iota-pico-pow-box/blob/e375275/src/proofOfWorkBox.ts#L62)*
 
 
 

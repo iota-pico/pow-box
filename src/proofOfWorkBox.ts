@@ -26,6 +26,7 @@ export class ProofOfWorkBox implements IProofOfWork {
      * Create an instance of ProofOfWork.
      * @param networkClient The network client to communicate through.
      * @param apiKey The API key to access the pow box.
+     * @param pollIntervalMs The polling time to check for completion.
      */
     constructor(networkClient: INetworkClient, apiKey: string, pollIntervalMs: number = 1000) {
         if (ObjectHelper.isEmpty(networkClient)) {
@@ -48,14 +49,6 @@ export class ProofOfWorkBox implements IProofOfWork {
      */
     public async initialize(): Promise<void> {
         return Promise.resolve();
-    }
-
-    /**
-     * Performs single conversion per pow call.
-     * @returns True if pow only does one conversion.
-     */
-    public performsSingle(): boolean {
-        return false;
     }
 
     /**
