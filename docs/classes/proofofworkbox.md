@@ -33,7 +33,7 @@ ProofOfWork implementation using Remote PowBox.
 ### ⊕ **new ProofOfWorkBox**(networkClient: *`INetworkClient`*, apiKey: *`string`*, pollIntervalMs?: *`number`*): [ProofOfWorkBox](proofofworkbox.md)
 
 
-*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/9b36143/src/proofOfWorkBox.ts#L23)*
+*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/3311146/src/proofOfWorkBox.ts#L23)*
 
 
 
@@ -66,7 +66,7 @@ Create an instance of ProofOfWork.
 
 
 
-*Defined in [proofOfWorkBox.ts:50](https://github.com/iotaeco/iota-pico-pow-box/blob/9b36143/src/proofOfWorkBox.ts#L50)*
+*Defined in [proofOfWorkBox.ts:50](https://github.com/iotaeco/iota-pico-pow-box/blob/3311146/src/proofOfWorkBox.ts#L50)*
 
 
 
@@ -91,7 +91,7 @@ ___
 
 
 
-*Defined in [proofOfWorkBox.ts:62](https://github.com/iotaeco/iota-pico-pow-box/blob/9b36143/src/proofOfWorkBox.ts#L62)*
+*Defined in [proofOfWorkBox.ts:62](https://github.com/iotaeco/iota-pico-pow-box/blob/3311146/src/proofOfWorkBox.ts#L62)*
 
 
 
