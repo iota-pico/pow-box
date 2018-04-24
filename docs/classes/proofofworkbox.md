@@ -1,11 +1,12 @@
 [@iota-pico/pow-box](../README.md) > [ProofOfWorkBox](../classes/proofofworkbox.md)
 
-
-
 # Class: ProofOfWorkBox
 
-
 ProofOfWork implementation using Remote PowBox.
+
+## Hierarchy
+
+**ProofOfWorkBox**
 
 ## Implements
 
@@ -17,28 +18,22 @@ ProofOfWork implementation using Remote PowBox.
 
 * [constructor](proofofworkbox.md#constructor)
 
-
 ### Methods
 
 * [initialize](proofofworkbox.md#initialize)
 * [pow](proofofworkbox.md#pow)
 
-
-
 ---
-## Constructors
-<a id="constructor"></a>
 
+## Constructors
+
+<a id="constructor"></a>
 
 ### ⊕ **new ProofOfWorkBox**(networkClient: *`INetworkClient`*, apiKey: *`string`*, pollIntervalMs?: *`number`*): [ProofOfWorkBox](proofofworkbox.md)
 
-
-*Defined in [proofOfWorkBox.ts:23](https://github.com/iotaeco/iota-pico-pow-box/blob/3311146/src/proofOfWorkBox.ts#L23)*
-
-
+*Defined in [proofOfWorkBox.ts:23](https://github.com/iota-pico/pow-box/blob/8d78073/src/proofOfWorkBox.ts#L23)*
 
 Create an instance of ProofOfWork.
-
 
 **Parameters:**
 
@@ -48,38 +43,23 @@ Create an instance of ProofOfWork.
 | apiKey | `string`  | - |   The API key to access the pow box. |
 | pollIntervalMs | `number`  | 1000 |   The polling time to check for completion. |
 
-
-
-
-
 **Returns:** [ProofOfWorkBox](proofofworkbox.md)
 
 ---
 
-
 ## Methods
+
 <a id="initialize"></a>
 
 ###  initialize
 
-► **initialize**(): `Promise`.<`void`>
+▸ **initialize**(): `Promise`.<`void`>
 
-
-
-*Defined in [proofOfWorkBox.ts:50](https://github.com/iotaeco/iota-pico-pow-box/blob/3311146/src/proofOfWorkBox.ts#L50)*
-
-
+*Defined in [proofOfWorkBox.ts:50](https://github.com/iota-pico/pow-box/blob/8d78073/src/proofOfWorkBox.ts#L50)*
 
 Allow the proof of work to perform any initialization. Will throw an exception if the implementation is not supported.
 
-
-
-
 **Returns:** `Promise`.<`void`>
-
-
-
-
 
 ___
 
@@ -87,16 +67,11 @@ ___
 
 ###  pow
 
-► **pow**(trunkTransaction: *`Hash`*, branchTransaction: *`Hash`*, trytes: *`Trytes`[]*, minWeightMagnitude: *`number`*): `Promise`.<`Trytes`[]>
+▸ **pow**(trunkTransaction: *`Hash`*, branchTransaction: *`Hash`*, trytes: *`Trytes`[]*, minWeightMagnitude: *`number`*): `Promise`.<`Trytes`[]>
 
-
-
-*Defined in [proofOfWorkBox.ts:62](https://github.com/iotaeco/iota-pico-pow-box/blob/3311146/src/proofOfWorkBox.ts#L62)*
-
-
+*Defined in [proofOfWorkBox.ts:62](https://github.com/iota-pico/pow-box/blob/8d78073/src/proofOfWorkBox.ts#L62)*
 
 Perform a proof of work on the data.
-
 
 **Parameters:**
 
@@ -107,18 +82,8 @@ Perform a proof of work on the data.
 | trytes | `Trytes`[]   |  The trytes to perform the pow on. |
 | minWeightMagnitude | `number`   |  The minimum weight magnitude. |
 
-
-
-
-
 **Returns:** `Promise`.<`Trytes`[]>
 The trytes produced by the proof of work.
 
-
-
-
-
-
 ___
-
 
