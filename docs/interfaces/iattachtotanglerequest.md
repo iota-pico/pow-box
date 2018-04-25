@@ -29,7 +29,7 @@ Represents the request for pow box attach to tangle command.
 
 **●  branchTransaction**:  *`string`* 
 
-*Defined in [models/IAttachToTangleRequest.ts:15](https://github.com/iota-pico/pow-box/blob/8d78073/src/models/IAttachToTangleRequest.ts#L15)*
+*Defined in [models/IAttachToTangleRequest.ts:15](https://github.com/iota-pico/pow-box/blob/4174ed0/src/models/IAttachToTangleRequest.ts#L15)*
 
 Branch transaction to approve.
 
@@ -41,7 +41,7 @@ ___
 
 **●  command**:  *`string`* 
 
-*Defined in [models/IAttachToTangleRequest.ts:7](https://github.com/iota-pico/pow-box/blob/8d78073/src/models/IAttachToTangleRequest.ts#L7)*
+*Defined in [models/IAttachToTangleRequest.ts:7](https://github.com/iota-pico/pow-box/blob/4174ed0/src/models/IAttachToTangleRequest.ts#L7)*
 
 The command to send
 
@@ -53,7 +53,7 @@ ___
 
 **●  minWeightMagnitude**:  *`number`* 
 
-*Defined in [models/IAttachToTangleRequest.ts:19](https://github.com/iota-pico/pow-box/blob/8d78073/src/models/IAttachToTangleRequest.ts#L19)*
+*Defined in [models/IAttachToTangleRequest.ts:19](https://github.com/iota-pico/pow-box/blob/4174ed0/src/models/IAttachToTangleRequest.ts#L19)*
 
 Proof of Work intensity. Minimum value is 18
 
@@ -65,7 +65,7 @@ ___
 
 **●  trunkTransaction**:  *`string`* 
 
-*Defined in [models/IAttachToTangleRequest.ts:11](https://github.com/iota-pico/pow-box/blob/8d78073/src/models/IAttachToTangleRequest.ts#L11)*
+*Defined in [models/IAttachToTangleRequest.ts:11](https://github.com/iota-pico/pow-box/blob/4174ed0/src/models/IAttachToTangleRequest.ts#L11)*
 
 Trunk transaction to approve.
 
@@ -77,7 +77,7 @@ ___
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IAttachToTangleRequest.ts:23](https://github.com/iota-pico/pow-box/blob/8d78073/src/models/IAttachToTangleRequest.ts#L23)*
+*Defined in [models/IAttachToTangleRequest.ts:23](https://github.com/iota-pico/pow-box/blob/4174ed0/src/models/IAttachToTangleRequest.ts#L23)*
 
 List of trytes (raw transaction data) to attach to the tangle.
 
