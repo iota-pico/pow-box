@@ -23,9 +23,9 @@ Represents the response for pow box attach to tangle command.
 
 ###  jobId
 
-**●  jobId**:  *`string`* 
+**● jobId**: *`string`*
 
-*Defined in [models/IAttachToTangleResponse.ts:9](https://github.com/iota-pico/pow-box/blob/4585bac/src/models/IAttachToTangleResponse.ts#L9)*
+*Defined in [models/IAttachToTangleResponse.ts:9](https://github.com/iota-pico/pow-box/blob/bad4355/src/models/IAttachToTangleResponse.ts#L9)*
 
 The id of the job we can use to get progress.
 

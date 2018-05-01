@@ -27,57 +27,53 @@ Represents the request for pow box attach to tangle command.
 
 ###  branchTransaction
 
-**●  branchTransaction**:  *`string`* 
+**● branchTransaction**: *`string`*
 
-*Defined in [models/IAttachToTangleRequest.ts:15](https://github.com/iota-pico/pow-box/blob/4585bac/src/models/IAttachToTangleRequest.ts#L15)*
+*Defined in [models/IAttachToTangleRequest.ts:15](https://github.com/iota-pico/pow-box/blob/bad4355/src/models/IAttachToTangleRequest.ts#L15)*
 
 Branch transaction to approve.
 
 ___
-
 <a id="command"></a>
 
 ###  command
 
-**●  command**:  *`string`* 
+**● command**: *`string`*
 
-*Defined in [models/IAttachToTangleRequest.ts:7](https://github.com/iota-pico/pow-box/blob/4585bac/src/models/IAttachToTangleRequest.ts#L7)*
+*Defined in [models/IAttachToTangleRequest.ts:7](https://github.com/iota-pico/pow-box/blob/bad4355/src/models/IAttachToTangleRequest.ts#L7)*
 
 The command to send
 
 ___
-
 <a id="minweightmagnitude"></a>
 
 ###  minWeightMagnitude
 
-**●  minWeightMagnitude**:  *`number`* 
+**● minWeightMagnitude**: *`number`*
 
-*Defined in [models/IAttachToTangleRequest.ts:19](https://github.com/iota-pico/pow-box/blob/4585bac/src/models/IAttachToTangleRequest.ts#L19)*
+*Defined in [models/IAttachToTangleRequest.ts:19](https://github.com/iota-pico/pow-box/blob/bad4355/src/models/IAttachToTangleRequest.ts#L19)*
 
 Proof of Work intensity. Minimum value is 18
 
 ___
-
 <a id="trunktransaction"></a>
 
 ###  trunkTransaction
 
-**●  trunkTransaction**:  *`string`* 
+**● trunkTransaction**: *`string`*
 
-*Defined in [models/IAttachToTangleRequest.ts:11](https://github.com/iota-pico/pow-box/blob/4585bac/src/models/IAttachToTangleRequest.ts#L11)*
+*Defined in [models/IAttachToTangleRequest.ts:11](https://github.com/iota-pico/pow-box/blob/bad4355/src/models/IAttachToTangleRequest.ts#L11)*
 
 Trunk transaction to approve.
 
 ___
-
 <a id="trytes"></a>
 
 ###  trytes
 
-**●  trytes**:  *`string`[]* 
+**● trytes**: *`string`[]*
 
-*Defined in [models/IAttachToTangleRequest.ts:23](https://github.com/iota-pico/pow-box/blob/4585bac/src/models/IAttachToTangleRequest.ts#L23)*
+*Defined in [models/IAttachToTangleRequest.ts:23](https://github.com/iota-pico/pow-box/blob/bad4355/src/models/IAttachToTangleRequest.ts#L23)*
 
 List of trytes (raw transaction data) to attach to the tangle.
 
