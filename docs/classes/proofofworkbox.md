@@ -33,7 +33,7 @@ ProofOfWork implementation using Remote PowBox.
 
 ⊕ **new ProofOfWorkBox**(networkClient: *`INetworkClient`*, apiKey: *`string`*, pollIntervalMs?: *`number`*): [ProofOfWorkBox](proofofworkbox.md)
 
-*Defined in [proofOfWorkBox.ts:23](https://github.com/iota-pico/pow-box/blob/8fb0f66/src/proofOfWorkBox.ts#L23)*
+*Defined in [proofOfWorkBox.ts:23](https://github.com/iota-pico/pow-box/blob/2d959da/src/proofOfWorkBox.ts#L23)*
 
 Create an instance of ProofOfWork.
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **initialize**(): `Promise`<`void`>
 
-*Defined in [proofOfWorkBox.ts:51](https://github.com/iota-pico/pow-box/blob/8fb0f66/src/proofOfWorkBox.ts#L51)*
+*Defined in [proofOfWorkBox.ts:51](https://github.com/iota-pico/pow-box/blob/2d959da/src/proofOfWorkBox.ts#L51)*
 
 Allow the proof of work to perform any initialization. Will throw an exception if the implementation is not supported.
 
@@ -71,7 +71,7 @@ ___
 
 ▸ **pow**(trunkTransaction: *`Hash`*, branchTransaction: *`Hash`*, trytes: *`Trytes`[]*, minWeightMagnitude: *`number`*): `Promise`<`Trytes`[]>
 
-*Defined in [proofOfWorkBox.ts:63](https://github.com/iota-pico/pow-box/blob/8fb0f66/src/proofOfWorkBox.ts#L63)*
+*Defined in [proofOfWorkBox.ts:63](https://github.com/iota-pico/pow-box/blob/2d959da/src/proofOfWorkBox.ts#L63)*
 
 Perform a proof of work on the data.
 
