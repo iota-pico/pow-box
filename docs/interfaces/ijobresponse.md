@@ -31,7 +31,7 @@ Represents the response for pow box job command.
 
 **● createdAt**: *`string`*
 
-*Defined in [models/IJobResponse.ts:19](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L19)*
+*Defined in [models/IJobResponse.ts:19](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L19)*
 
 The date/time for job was created.
 
@@ -42,7 +42,7 @@ ___
 
 **● error**: *`boolean`*
 
-*Defined in [models/IJobResponse.ts:24](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L24)*
+*Defined in [models/IJobResponse.ts:24](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L24)*
 
 Was there an error for the job.
 
@@ -53,7 +53,7 @@ ___
 
 **● errorMessage**: *`string`*
 
-*Defined in [models/IJobResponse.ts:29](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L29)*
+*Defined in [models/IJobResponse.ts:29](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L29)*
 
 The error message for the job.
 
@@ -64,7 +64,7 @@ ___
 
 **● jobId**: *`string`*
 
-*Defined in [models/IJobResponse.ts:9](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L9)*
+*Defined in [models/IJobResponse.ts:9](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L9)*
 
 The id of the job.
 
@@ -75,7 +75,7 @@ ___
 
 **● progress**: *`string`*
 
-*Defined in [models/IJobResponse.ts:34](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L34)*
+*Defined in [models/IJobResponse.ts:34](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L34)*
 
 The progress for the job.
 
@@ -86,7 +86,7 @@ ___
 
 **● response**: *`object`*
 
-*Defined in [models/IJobResponse.ts:39](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L39)*
+*Defined in [models/IJobResponse.ts:39](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L39)*
 
 The response trytes that have has pow performed on them.
 
@@ -101,7 +101,7 @@ ___
 
 **● updatedAt**: *`string`*
 
-*Defined in [models/IJobResponse.ts:14](https://github.com/iota-pico/pow-box/blob/2d959da/src/models/IJobResponse.ts#L14)*
+*Defined in [models/IJobResponse.ts:14](https://github.com/iota-pico/pow-box/blob/590e420/src/models/IJobResponse.ts#L14)*
 
 The date/time for job was updated.
 
