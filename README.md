@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iota-pico/pow-box/master/LICENSE) [![Build Status](https://travis-ci.org/iota-pico/pow-box.svg?branch=master)](https://travis-ci.org/iota-pico/pow-box) [![NSP Status](https://nodesecurity.io/orgs/iota-pico/projects/aeca070b-6a72-4106-a7fd-5be139a19716/badge)](https://nodesecurity.io/orgs/iota-pico/projects/aeca070b-6a72-4106-a7fd-5be139a19716)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iota-pico/pow-box/master/LICENSE) [![Build Status](https://travis-ci.org/iota-pico/pow-box.svg?branch=master)](https://travis-ci.org/iota-pico/pow-box) 
 [![Coveralls](https://img.shields.io/coveralls/iota-pico/pow-box.svg)](https://coveralls.io/github/iota-pico/pow-box)
 
 # IOTA Pico Framework Proof Of Work Remote Box
