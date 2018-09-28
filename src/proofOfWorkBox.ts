@@ -84,7 +84,7 @@ export class ProofOfWorkBox implements IProofOfWork {
 
         const additionalHeaders = { Authorization: this._apiKey };
 
-        const attachToTangleResponse = await this._networkClient.postJson<IAttachToTangleRequest, IAttachToTangleResponse>(attachToTangleRequest, "commands", additionalHeaders);
+        const attachToTangleResponse = await this._networkClient.json<IAttachToTangleRequest, IAttachToTangleResponse>(attachToTangleRequest, "POST", "commands", additionalHeaders);
 
         if (ObjectHelper.isEmpty(attachToTangleResponse) || StringHelper.isEmpty(attachToTangleResponse.jobId)) {
             throw new CryptoError("The attachToTangleRequest did not return a jobId");
@@ -98,7 +98,7 @@ export class ProofOfWorkBox implements IProofOfWork {
         return new Promise<Trytes[]>((resolve, reject) => {
             const intervalId = setInterval(async () => {
                 try {
-                    const jobResponse = await this._networkClient.getJson<IJobResponse>(`jobs/${jobId}`);
+                    const jobResponse = await this._networkClient.json<any, IJobResponse>(undefined, "GET", `jobs/${jobId}`);
                     if (jobResponse.error) {
                         clearInterval(intervalId);
                         reject(new CryptoError(jobResponse.errorMessage));
