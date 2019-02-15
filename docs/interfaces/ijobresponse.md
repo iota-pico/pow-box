@@ -3,6 +3,7 @@
 # Interface: IJobResponse
 
 Represents the response for pow box job command.
+
 *__interface__*: 
 
 ## Hierarchy

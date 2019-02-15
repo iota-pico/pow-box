@@ -3,6 +3,7 @@
 # Interface: IAttachToTangleResponse
 
 Represents the response for pow box attach to tangle command.
+
 *__interface__*: 
 
 ## Hierarchy
