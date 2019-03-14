@@ -167,7 +167,8 @@
 <a name='L119'></a><a href='#L119'>119</a>
 <a name='L120'></a><a href='#L120'>120</a>
 <a name='L121'></a><a href='#L121'>121</a>
-<a name='L122'></a><a href='#L122'>122</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -258,14 +259,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -378,34 +380,35 @@ export class ProofOfWorkBox implements IProofOfWork {
 &nbsp;
         if (ObjectHelper.isEmpty(attachToTangleResponse) || StringHelper.isEmpty(attachToTangleResponse.jobId)) {
             throw new CryptoError("The attachToTangleRequest did not return a jobId");
-        } else {
-            return this.waitForJobCompletion(attachToTangleResponse.jobId, trytes);
         }
+&nbsp;
+        return this.waitForJobCompletion(attachToTangleResponse.jobId, trytes);
     }
 &nbsp;
     /* @internal */
     private async waitForJobCompletion(jobId: string, sourceTrytes: Trytes[]): Promise&lt;Trytes[]&gt; {
         return new Promise&lt;Trytes[]&gt;((resolve, reject) =&gt; {
-            const intervalId = setInterval(async () =&gt; {
-                try {
-                    const jobResponse = await this._networkClient.json&lt;any, IJobResponse&gt;(undefined, "GET", `jobs/${jobId}`);
-                    if (jobResponse.error) {
-                        clearInterval(intervalId);
-                        reject(new CryptoError(jobResponse.errorMessage));
-                    } else if (jobResponse.progress === "100") {
-                        clearInterval(intervalId);
-                        if (jobResponse &amp;&amp; jobResponse.response &amp;&amp; jobResponse.response.trytes &amp;&amp; jobResponse.response.trytes.length === sourceTrytes.length) {
-                            resolve(jobResponse.response.trytes.map(t =&gt; Trytes.fromString(t)));
-                        } else {
-                            reject(new CryptoError("The response did not contain enough trytes"));
+            const intervalId = setInterval(
+                async () =&gt; {
+                    try {
+                        const jobResponse = await this._networkClient.json&lt;any, IJobResponse&gt;(undefined, "GET", `jobs/${jobId}`);
+                        if (jobResponse.error) {
+                            clearInterval(intervalId);
+                            reject(new CryptoError(jobResponse.errorMessage));
+                        } else if (jobResponse.progress === "100") {
+                            clearInterval(intervalId);
+                            if (jobResponse &amp;&amp; jobResponse.response &amp;&amp; jobResponse.response.trytes &amp;&amp; jobResponse.response.trytes.length === sourceTrytes.length) {
+                                resolve(jobResponse.response.trytes.map(t =&gt; Trytes.fromString(t)));
+                            } else {
+                                reject(new CryptoError("The response did not contain enough trytes"));
+                            }
                         }
+                    } catch (err) {
+                        clearInterval(intervalId);
+                        reject(err);
                     }
-                } catch (err) {
-                    clearInterval(intervalId);
-                    reject(err);
-                }
-            },
-                                           this._pollIntervalMs);
+                },
+                this._pollIntervalMs);
         });
     }
 }

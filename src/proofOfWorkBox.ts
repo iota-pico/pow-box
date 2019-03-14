@@ -88,34 +88,35 @@ export class ProofOfWorkBox implements IProofOfWork {
 
         if (ObjectHelper.isEmpty(attachToTangleResponse) || StringHelper.isEmpty(attachToTangleResponse.jobId)) {
             throw new CryptoError("The attachToTangleRequest did not return a jobId");
-        } else {
-            return this.waitForJobCompletion(attachToTangleResponse.jobId, trytes);
         }
+
+        return this.waitForJobCompletion(attachToTangleResponse.jobId, trytes);
     }
 
     /* @internal */
     private async waitForJobCompletion(jobId: string, sourceTrytes: Trytes[]): Promise<Trytes[]> {
         return new Promise<Trytes[]>((resolve, reject) => {
-            const intervalId = setInterval(async () => {
-                try {
-                    const jobResponse = await this._networkClient.json<any, IJobResponse>(undefined, "GET", `jobs/${jobId}`);
-                    if (jobResponse.error) {
-                        clearInterval(intervalId);
-                        reject(new CryptoError(jobResponse.errorMessage));
-                    } else if (jobResponse.progress === "100") {
-                        clearInterval(intervalId);
-                        if (jobResponse && jobResponse.response && jobResponse.response.trytes && jobResponse.response.trytes.length === sourceTrytes.length) {
-                            resolve(jobResponse.response.trytes.map(t => Trytes.fromString(t)));
-                        } else {
-                            reject(new CryptoError("The response did not contain enough trytes"));
+            const intervalId = setInterval(
+                async () => {
+                    try {
+                        const jobResponse = await this._networkClient.json<any, IJobResponse>(undefined, "GET", `jobs/${jobId}`);
+                        if (jobResponse.error) {
+                            clearInterval(intervalId);
+                            reject(new CryptoError(jobResponse.errorMessage));
+                        } else if (jobResponse.progress === "100") {
+                            clearInterval(intervalId);
+                            if (jobResponse && jobResponse.response && jobResponse.response.trytes && jobResponse.response.trytes.length === sourceTrytes.length) {
+                                resolve(jobResponse.response.trytes.map(t => Trytes.fromString(t)));
+                            } else {
+                                reject(new CryptoError("The response did not contain enough trytes"));
+                            }
                         }
+                    } catch (err) {
+                        clearInterval(intervalId);
+                        reject(err);
                     }
-                } catch (err) {
-                    clearInterval(intervalId);
-                    reject(err);
-                }
-            },
-                                           this._pollIntervalMs);
+                },
+                this._pollIntervalMs);
         });
     }
 }
